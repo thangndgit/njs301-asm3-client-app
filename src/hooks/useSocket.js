@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const useSocket = (host = "http://localhost:5000") => {
+const useSocket = (host = "https://njs301-asm3-server.onrender.com") => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
